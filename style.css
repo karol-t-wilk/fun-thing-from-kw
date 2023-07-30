@@ -15,6 +15,7 @@ body,
   position: relative;
   background-color: #101016;
   overflow: hidden;
+  gap: 15px;
 }
 
 .catto-img {
@@ -46,4 +47,13 @@ body,
 
 #clickme:hover {
   background-color: antiquewhite;
+}
+
+.credits {
+  font-family: monospace;
+  color: dimgray;
+}
+
+.credits a {
+  color: darkgray;
 }

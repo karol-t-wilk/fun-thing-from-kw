@@ -76,7 +76,8 @@ const run = () => {
   const icon = $('link[rel="icon"]').attr("href", cats[0]);
 
   const title2 = $("<div></div>").text(TITLE).addClass("bday-text");
-  $("#root").append(img).append(title2);
+  const credit = $("<div></div>").html('music: <i>softs house</i> by <a href="https://youtube.com/@almostcatwins">catwins\'s music</a>').addClass("credits")
+  $("#root").append(img).append(title2).append(credit);
 
   let confettis = [];
 
@@ -105,7 +106,7 @@ const run = () => {
         const imgWidth = img.width();
         const imgHeight = img.height();
         const isRight = newIndex === 3;
-        const y = imgPos.top + imgHeight / 2;
+        const y = imgPos.top + imgHeight * 0.6;
         const x =
           imgPos.left + imgWidth / 2 + (isRight ? imgWidth / 3 : -imgWidth / 3);
         Array(5)
